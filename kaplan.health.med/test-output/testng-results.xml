@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="283958" started-at="2015-06-02T14:18:14Z" finished-at="2015-06-02T14:22:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="283958" started-at="2015-06-02T14:18:14Z" finished-at="2015-06-02T14:22:57Z">
+      <class name="med.jasper.regression.DisplayVideotitle">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:med.jasper.regression.DisplayVideotitle@6debcae2]" name="beforeMethod" is-config="true" duration-ms="4615" started-at="2015-06-02T10:18:14Z" finished-at="2015-06-02T10:18:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="VerifyDisplayCardiologyVideotitle()[pri:0, instance:med.jasper.regression.DisplayVideotitle@6debcae2]" name="VerifyDisplayCardiologyVideotitle" duration-ms="279073" started-at="2015-06-02T10:18:18Z" finished-at="2015-06-02T10:22:57Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...s - Class I antiarrh[y]thmics> but was:<...s - Class I antiarrh[i]thmics>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...s - Class I antiarrh[y]thmics> but was:<...s - Class I antiarrh[i]thmics>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at med.jasper.model.JasperHomePageModel.clickOnVideoTitle(JasperHomePageModel.java:317)
+	at med.jasper.model.JasperHomePageModel.clickOnMol(JasperHomePageModel.java:158)
+	at med.jasper.controller.JasperHomePageController.verifyDisplayCardiologyVideotitle(JasperHomePageController.java:264)
+	at med.jasper.regression.DisplayVideotitle.VerifyDisplayCardiologyVideotitle(DisplayVideotitle.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDisplayCardiologyVideotitle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:med.jasper.regression.DisplayVideotitle@6debcae2]" name="afterMethod" is-config="true" duration-ms="232" started-at="2015-06-02T10:22:57Z" finished-at="2015-06-02T10:22:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- med.jasper.regression.DisplayVideotitle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
