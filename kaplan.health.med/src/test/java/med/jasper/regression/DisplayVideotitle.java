@@ -102,11 +102,15 @@ public class DisplayVideotitle extends BaseScript{
 	public void VerifyGastroenterologyVideoDuration(){
 		openOPLLogInPage().logInOLPPage("arahman", "arahman", "USMLEStep1HYOnlinePrepHTML");
 		jasperhomepage().verifyGastroenterologyVideoDuration();
-	}@Test
+	}
+	
+	@Test
 	public void VerifyEndocrinologyVideoDuration(){
 		openOPLLogInPage().logInOLPPage("arahman", "arahman", "USMLEStep1HYOnlinePrepHTML");
 		jasperhomepage().verifyEndocrinologyVideoDuration();
-	}@Test
+	}
+	
+	@Test
 	public void VerifyNephrologyVideoDuration(){
 		openOPLLogInPage().logInOLPPage("arahman", "arahman", "USMLEStep1HYOnlinePrepHTML");
 		jasperhomepage().verifyNephrologyVideoDuration();
@@ -152,7 +156,7 @@ public class DisplayVideotitle extends BaseScript{
 	}
 	
 	@Test
-	public void vverifyDisplayNeuroscienceQuiztitle(){
+	public void VerifyDisplayNeuroscienceQuiztitle(){
 		openOPLLogInPage().logInOLPPage("arahman", "arahman", "USMLEStep1HYOnlinePrepHTML");
 		jasperhomepage().verifyDisplayNeuroscienceQuiztitle();
 	}
@@ -203,6 +207,5 @@ public class DisplayVideotitle extends BaseScript{
 	public void tstsJasper(){
 		openJasperLogInPage().logInJasperPage("abrahman", "Nusrat1234!@", "abrahman", "abrahman", "USMLEStep1Qbank2010");
 		System.out.println("Ami ai khana mam : "+driver.getTitle());
-		
 	}
 }

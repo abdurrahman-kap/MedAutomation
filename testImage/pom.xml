@@ -24,6 +24,35 @@
 			</exclusions>
 		</dependency>
 		
+		<dependency>
+			<groupId>fr.inria.powerapi.reporter</groupId>
+			<artifactId>reporter-file</artifactId>
+			<version>1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>10.0-b28</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>1.8.9</version>
+		</dependency>
+
+		<!-- <dependency>
+		     <groupId>org.apache.commons</groupId>
+		     <artifactId>commons-email</artifactId>
+		     <version>1.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-parent</artifactId>
+		    <version>38</version>  
+		</dependency> -->
+
         <dependency>
 	     <groupId>org.testng</groupId>
 	      <artifactId>testng</artifactId>

@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59880" started-at="2015-06-16T21:04:01Z" finished-at="2015-06-16T21:05:01Z">
+  <suite name="Default suite" duration-ms="21144305" started-at="2015-09-21T14:40:35Z" finished-at="2015-09-21T20:33:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59880" started-at="2015-06-16T21:04:01Z" finished-at="2015-06-16T21:05:01Z">
-      <class name="health.med.testclass">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:health.med.testclass@34ce8af7]" name="beforeMethod" is-config="true" duration-ms="59848" started-at="2015-06-16T17:04:01Z" finished-at="2015-06-16T17:05:01Z">
+    <test name="Default test" duration-ms="21144305" started-at="2015-09-21T14:40:35Z" finished-at="2015-09-21T20:33:00Z">
+      <class name="health.med.TitleVerify">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:health.med.TitleVerify@6574b225]" name="beforeMethod" is-config="true" duration-ms="5309" started-at="2015-09-21T10:40:35Z" finished-at="2015-09-21T10:40:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:health.med.testclass@34ce8af7]" name="testLogin" duration-ms="16" started-at="2015-06-16T17:05:01Z" finished-at="2015-06-16T17:05:01Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:health.med.TitleVerify@6574b225]" name="test1" duration-ms="21138180" started-at="2015-09-21T10:40:41Z" finished-at="2015-09-21T16:32:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- health.med.testclass -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:health.med.TitleVerify@6574b225]" name="afterMethod" is-config="true" duration-ms="746" started-at="2015-09-21T16:32:59Z" finished-at="2015-09-21T16:33:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- health.med.TitleVerify -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

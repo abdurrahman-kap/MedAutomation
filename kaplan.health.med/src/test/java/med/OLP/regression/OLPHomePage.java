@@ -13,10 +13,6 @@ public class OLPHomePage extends BaseScript{
 		olphomepage().openNBDEDiagnosticInstitutionalPage();
 	}
 
-	@Test
-	public void testing1212(){
-		openOMALogInPage().test();	
-	}
 	
 	@Test
 	public void testContents(){

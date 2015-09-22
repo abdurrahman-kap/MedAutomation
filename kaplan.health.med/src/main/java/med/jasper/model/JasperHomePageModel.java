@@ -7,7 +7,9 @@ import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class JasperHomePageModel {
 	
@@ -137,14 +139,23 @@ public class JasperHomePageModel {
 	
 	public void clickOnMol(String dispName){
 			
-		for(int i=5;i<1500;i++){
+		for(int i=1;i<1500;i++){
 			
 			int subName = driver.findElements(By.xpath(".//*[@id='home-dashboard-table-txt']/li[2]/ul/li[1]/a")).size();
-			if(subName>0){
+			if(subName>0 && i>1){
 				waitFor(3);
 				WebElement subNameText = driver.findElement(By.xpath("//*[@id='home-dashboard-table-results']/ul[@id='home-dashboard-table-txt']//li/a[normalize-space(text())='"+dispName+"']"));
 				modName = subNameText.getText();
-				subNameText.click();
+				
+				boolean bst = isClickable(subNameText);
+				System.out.println("mama paici ::: "+bst);
+				if(bst== true){
+					System.out.println("find the way ::::");
+					waitFor(2);
+					subNameText.click();
+				}else {
+					System.out.println("kos  ki momin");
+				}
 			}
 			
 			int nubEle = driver.findElements(By.xpath(".//*[@id='chapter-list']/ul/li[" +i +"]/a")).size();
@@ -409,4 +420,20 @@ public class JasperHomePageModel {
 			e.printStackTrace();
 		}
 	  }
+	
+
+	public boolean isClickable(WebElement webe)      
+	{
+		try
+		{
+		   WebDriverWait wait = new WebDriverWait(driver, 1);
+		   //wait.until(ExpectedConditions.elementToBeClickable(webe));
+		   wait.until(ExpectedConditions.visibilityOf(webe));
+		   return true;
+		}
+		catch (Exception e)
+		{
+		  return false;
+		}
+	}
 }

@@ -2,14 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="med.test"/>
-			<item value="med.test.proj"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="com.test"/>
-			<item value="testproj"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -36,6 +32,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Projects\Other Projects\ptc"/>
 			<item value="C:\Users\AbRahman\Desktop\New folder\Copy of flexplm(2)"/>
 			<item value="C:\Users\AbRahman\Desktop\javacode\JasperWP.Tests-master\S1HY"/>
 			<item value="C:\Projects\kaptest\workspace\S1HY"/>
@@ -65,6 +62,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Projects\kaptest\workspace\kaplan.health.med\src\main\java"/>
 			<item value="C:\Projects\kaptest\workspace\testImage"/>
 			<item value="C:\Projects\kaptest\workspace"/>
 			<item value="C:\Projects\kaptest\workspace\NursingReportsFramework\src\test\java\com\kaplan\qa\nursing\test"/>

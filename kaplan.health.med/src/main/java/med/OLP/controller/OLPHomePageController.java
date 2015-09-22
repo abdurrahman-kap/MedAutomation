@@ -22,73 +22,77 @@ public class OLPHomePageController {
 		olphomepage.waitFor(5);
 		Assert.assertEquals("NBDE Diagnostic Institutional", confmPage.getWelcomePageText());
 	}
-
-	public void verifyAnalysisReviewpage() {
-		
-		Assert.assertEquals("Welcome to the COMLEX Qbank.", "Welcome to the " + confmPage.getWelcomePageText());
-		olphomepage.waitFor(3);
-		olphomepage.clickOnPreviousTest();
-		olphomepage.waitFor(3);
-		System.out.println(confmPage.getAnalysisPageText());
-		Assert.assertEquals("TEST ANALYSIS : HISTORY", confmPage.getAnalysisPageText());
-		olphomepage.waitFor(3);
-		confmPage.verifyColHeaderText();
+	
+	
+	public void verifyNBDETesting() {
+		olphomepage.waitFor(5);
+		olphomepage.waitFor(5);
+		olphomepage.clickOnContinue();
+		Assert.assertEquals("My NBDE Part I Online Prep Dashboard",confmPage.getHomePagetitle());
 		olphomepage.waitFor(2);
-		Assert.assertEquals("Analysis",confmPage.getAnalysisString());
+		olphomepage.clickDental();
 		olphomepage.waitFor(2);
-		Assert.assertEquals("Review",confmPage.getReviewString());
+		olphomepage.clickOnMol("Dental");	
 	}
 
-	public void verifyAnalysispageforQbankOLP() {
-		Assert.assertEquals("Welcome to the COMLEX Qbank.", "Welcome to the " + confmPage.getWelcomePageText());
-		olphomepage.waitFor(3);
-		olphomepage.clickOnPreviousTest();
-		olphomepage.waitFor(3);
-		olphomepage.clickOnAnalysislink();
+	public void verifyNBDEImmunology() {
+		olphomepage.waitFor(5);
+		olphomepage.clickOnContinue();
+		Assert.assertEquals("My NBDE Part I Online Prep Dashboard",confmPage.getHomePagetitle());
 		olphomepage.waitFor(2);
-		olphomepage.clickOnReviewThistest();
+		olphomepage.clickOnImmunology();
 		olphomepage.waitFor(2);
-		olphomepage.clickOnGoToAnalysis();
+		olphomepage.clickOnMol("Immunology");
+		}
+
+	public void verifyNBDEMicrobiology() {
+		olphomepage.waitFor(5);
+		olphomepage.clickOnContinue();
+		Assert.assertEquals("My NBDE Part I Online Prep Dashboard",confmPage.getHomePagetitle());
 		olphomepage.waitFor(2);
-		Assert.assertEquals("OVERALL PERFORMANCE ANALYSIS",confmPage.getOVERALLPERFORMANCEText());
+		olphomepage.clickOnMicrobiology();
 		olphomepage.waitFor(2);
-		Assert.assertEquals("DISCIPLINE",confmPage.getDisciplineText());
-		olphomepage.waitFor(2);
-		Assert.assertEquals("ORGAN SYSTEM",confmPage.getOrganSystemText());
+		olphomepage.clickOnMol("Microbiology");
 	}
 
-	public void verifyReviewpageforQbankOLP() {
-		Assert.assertEquals("Welcome to the COMLEX Qbank.", "Welcome to the " + confmPage.getWelcomePageText());
-		olphomepage.waitFor(3);
-		olphomepage.clickOnPreviousTest();
-		olphomepage.waitFor(3);
-		olphomepage.clickOnReviewlink();
+	public void verifyNBDEBiochemistry() {
+		olphomepage.waitFor(5);
+		olphomepage.clickOnContinue();
+		Assert.assertEquals("My NBDE Part I Online Prep Dashboard",confmPage.getHomePagetitle());
 		olphomepage.waitFor(2);
-		olphomepage.clickOnViewReview();
-		olphomepage.waitFor(3);
-		/*confmPage.verifyReviewColHeaderText();
-		olphomepage.waitFor(2);*/
-		olphomepage.clickOnExplanationLink();
+		olphomepage.clickOnBiochemistry();
 		olphomepage.waitFor(2);
-		Assert.assertTrue(confmPage.getExplanationLinkVal());
-		olphomepage.waitFor(2);
+		olphomepage.clickOnMol("Biochemistry");
 	}
 
-	public void verifyExplanationOLP() {
-		Assert.assertEquals("Welcome to the COMLEX Qbank.", "Welcome to the " + confmPage.getWelcomePageText());
-		olphomepage.waitFor(3);
-		olphomepage.clickOnPreviousTest();
-		olphomepage.waitFor(3);
-		olphomepage.clickOnReviewlink();
+	public void verifyNBDEPhysiology() {
+		olphomepage.waitFor(5);
+		olphomepage.clickOnContinue();
+		Assert.assertEquals("My NBDE Part I Online Prep Dashboard",confmPage.getHomePagetitle());
 		olphomepage.waitFor(2);
-		olphomepage.clickOnViewReview();
-		olphomepage.waitFor(3);
-		olphomepage.clickOnExplanationLink();
+		olphomepage.clickOnPhysiology();
 		olphomepage.waitFor(2);
-		Assert.assertTrue(confmPage.getExplanationLinkVal());
-		olphomepage.waitFor(2);
-		olphomepage.clickOnCloseLink();
-		olphomepage.waitFor(2);
-		Assert.assertFalse(confmPage.getCloseLinkVal());
+		olphomepage.clickOnMol("Physiology");
 	}
+
+	public void verifyNBDEAnatomy() {
+		olphomepage.waitFor(5);
+		olphomepage.clickOnContinue();
+		Assert.assertEquals("My NBDE Part I Online Prep Dashboard",confmPage.getHomePagetitle());
+		olphomepage.waitFor(2);
+		olphomepage.clickOnAnatomy();
+		olphomepage.waitFor(2);
+		olphomepage.clickOnMol("Anatomy");
+	}
+
+	public void verifyNBDEPathology() {
+		olphomepage.waitFor(5);
+		olphomepage.clickOnContinue();
+		Assert.assertEquals("My NBDE Part I Online Prep Dashboard",confmPage.getHomePagetitle());
+		olphomepage.waitFor(2);
+		olphomepage.clickOnPathology();
+		olphomepage.waitFor(2);
+		olphomepage.clickOnMol("Pathology");
+	}
+	
 }

@@ -374,4 +374,5 @@ public class JasperHomePageController {
 		homepage.waitFor(2);
 		homepage.clickDisplayTime("Internal Medicine");
 	}
+	
 }

@@ -40,6 +40,14 @@ public class TitleVerify {
 		clickLogIn.click();
 	}
 
+	public void clickOnContinue() {
+		int fElement = driver.findElements(By.xpath("//div[1]/div/div/div/p[3]/a")).size();
+		if(fElement != 0){
+			WebElement clickOnSubName = driver.findElement(By.xpath("//div[1]/div/div/div/p[3]/a"));
+			clickOnSubName.click();
+		}
+	}
+	
 	public void clickOnChapterClose(){
 		WebElement clickLogIn = driver.findElement(By.xpath(".//*[@id='chapter-list']/button"));
 		clickLogIn.click();
@@ -219,6 +227,8 @@ public class TitleVerify {
 		clickOnProduct("USMLEStep1HYOnlinePrepHTML");
 		waitFor(2);
 		clickLogIn();
+		waitFor(2);
+		clickOnContinue();
 		waitFor(2);
 		clickOnProducts();
 	}

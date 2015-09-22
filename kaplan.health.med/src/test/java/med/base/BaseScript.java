@@ -7,7 +7,8 @@ import med.OLP.controller.OLPHomePageController;
 import med.jasper.controller.JasperHomePageController;
 import med.jasper.controller.JasperLogInPageController;
 import med.jasper.controller.JasperQAPageController;
-import med.jasper.controller.OMAQALogInPageController;
+import med.qbank.QBankHomePageController;
+import med.shp.controller.OAMQALogInPageController;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,16 +25,18 @@ public class BaseScript {
 
 	@BeforeMethod
 	public void beforeMethod(){
-		
-		FirefoxProfile profile = new FirefoxProfile(); //FirefoxDriver
+		 /*if(driver==null){
+	            driver = new FirefoxDriver();
+	        }*/
+		//FirefoxProfile profile = new FirefoxProfile(); //FirefoxDriver
 		//profile.setPreference("browser.cache.disk.enable", false);
-		driver = new FirefoxDriver(profile); 
+		//driver = new FirefoxDriver(profile); 
 		//File chromeDriverFile = new File(System.getProperty("user.dir") +  "/drivers/32/chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", chromeDriverFile.getAbsolutePath());
 		
-		/*System.setProperty("webdriver.chrome.driver","C:\\DevTools\\Browser\\chromedriver.exe");// chromedriver
+		System.setProperty("webdriver.chrome.driver","C:\\DevTools\\Browser\\chromedriver.exe");// chromedriver
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);*/
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		/*DesiredCapabilities caps = DesiredCapabilities.internetExplorer();//IEDriverServer
 		System.setProperty("webdriver.ie.driver","C:\\DevTools\\Browser\\IEDriverServer.exe");
@@ -67,26 +70,30 @@ public class BaseScript {
 	}
 	
 	public JasperLogInPageController openOPLLogInPage(){
-		
 		driver.navigate().to("http://jasperwp.qa.kaplan.com/loginv8.aspx");
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		return new JasperLogInPageController(driver);
 	}
 
 	public JasperQAPageController openJasQALogInPage(){
-		
 		driver.navigate().to("http://qwjasweb02.kaplaninc.com");
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		return new JasperQAPageController(driver);
 	}
 	
-	public OMAQALogInPageController openOMALogInPage(){
-		
+	public OAMQALogInPageController openOMALogInPage(){
 		driver.navigate().to("file://C:/Users/AbRahman/Desktop/workfldr/oam.html");
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		return new OMAQALogInPageController(driver);
+		return new OAMQALogInPageController(driver);
 	}
 	
+	public QBankHomePageController openQBankPage()
+	{
+		driver.navigate().to("http://jasperwp.qa.kaplan.com/loginv8.aspx");
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return new QBankHomePageController(driver);
+	}
+
 	@AfterMethod
 	public void afterMethod(){
 		driver.quit();

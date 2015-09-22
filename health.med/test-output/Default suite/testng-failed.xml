@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="health.med.testclass">
+      <class name="health.med.excleprac">
         <methods>
+          <include name="readdata"/>
           <include name="beforeMethod"/>
-          <include name="testLogin"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- health.med.testclass -->
+      </class> <!-- health.med.excleprac -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

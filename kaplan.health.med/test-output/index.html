@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\AbRahman\AppData\Local\Temp\testng-eclipse--1710414516\testng-customsuite.xml</span>
+                    <span>C:\Users\AbRahman\AppData\Local\Temp\testng-eclipse--612745305\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="med.jasper.regression.DisplayVideotitle" hash-for-method="VerifyDisplayCardiologyVideotitle">VerifyDisplayCardiologyVideotitle</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="med.OLP.regression.RegressionForOLPProducts" hash-for-method="VerifyTestAnalysisReviewpageforQbankOLP">VerifyTestAnalysisReviewpageforQbankOLP</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,58 +116,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">med.jasper.regression.DisplayVideotitle</span>
+              <img src="passed.png"/>
+              <span class="class-name">med.OLP.regression.RegressionForOLPProducts</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyDisplayCardiologyVideotitle">
-                  </a> <!-- VerifyDisplayCardiologyVideotitle -->
-                  <span class="method-name">VerifyDisplayCardiologyVideotitle</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;...s - Class I antiarrh[y]thmics&gt; but was:&lt;...s - Class I antiarrh[i]thmics&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:85)
-	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at med.jasper.model.JasperHomePageModel.clickOnVideoTitle(JasperHomePageModel.java:317)
-	at med.jasper.model.JasperHomePageModel.clickOnMol(JasperHomePageModel.java:158)
-	at med.jasper.controller.JasperHomePageController.verifyDisplayCardiologyVideotitle(JasperHomePageController.java:264)
-	at med.jasper.regression.DisplayVideotitle.VerifyDisplayCardiologyVideotitle(DisplayVideotitle.java:65)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-
-</div> <!-- stack-trace -->
+                  <a name="VerifyTestAnalysisReviewpageforQbankOLP">
+                  </a> <!-- VerifyTestAnalysisReviewpageforQbankOLP -->
+                  <span class="method-name">VerifyTestAnalysisReviewpageforQbankOLP</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AbRahman\AppData\Local\Temp\testng-eclipse--1710414516\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\AbRahman\AppData\Local\Temp\testng-eclipse--612745305\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -176,11 +143,11 @@
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;med.jasper.regression.DisplayVideotitle&quot;&gt;
+      &lt;class name=&quot;med.OLP.regression.RegressionForOLPProducts&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;VerifyDisplayCardiologyVideotitle&quot;/&gt;
+          &lt;include name=&quot;VerifyTestAnalysisReviewpageforQbankOLP&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- med.jasper.regression.DisplayVideotitle --&gt;
+      &lt;/class&gt; &lt;!-- med.OLP.regression.RegressionForOLPProducts --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -222,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyDisplayCardiologyVideotitle')
-data.setCell(0, 2, 'med.jasper.regression.DisplayVideotitle')
-data.setCell(0, 3, 279073);
+data.setCell(0, 1, 'VerifyTestAnalysisReviewpageforQbankOLP')
+data.setCell(0, 2, 'med.OLP.regression.RegressionForOLPProducts')
+data.setCell(0, 3, 140942);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -244,77 +211,21 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">33 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">med.jasper.regression.DisplayVideotitle</span>
+              <span class="ignored-class-name">med.OLP.regression.RegressionForOLPProducts</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyDisplayReproductiveQuiztitle</span>
+                <span class="ignored-method-name">VerifyExplanationforQbankOLPproducts</span>
                 <br/>
-                <span class="ignored-method-name">VerifyDisplayNeuroscienceVideotitle</span>
+                <span class="ignored-method-name">VerifyAnalysispageforQbankOLP</span>
                 <br/>
-                <span class="ignored-method-name">VerifyDisplayEndocrinologyQuiztitle</span>
+                <span class="ignored-method-name">VerifyAnalysispageforQbankOLPproducts</span>
                 <br/>
-                <span class="ignored-method-name">tstsJasper</span>
+                <span class="ignored-method-name">VerifyReviewpageforQbankOLPproducts</span>
                 <br/>
-                <span class="ignored-method-name">VerifyDisplayImmunologyQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyCardiologyVideoDuration</span>
-                <br/>
-                <span class="ignored-method-name">VerifyPReproductiveMedicineVideoDuration</span>
-                <br/>
-                <span class="ignored-method-name">VerifyPharmacologyVideoDuration</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayPharmacologyVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayNephrologyQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayEpidemiologyQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayEpidemiologyVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayPharmacologyQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyNephrologyVideoDuration</span>
-                <br/>
-                <span class="ignored-method-name">VerifyEndocrinologyVideoDuration</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayBehavioralMedicineVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayGastroenterologyQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayCardiologyQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayRespiratoryQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyGastroenterologyVideoDuration</span>
-                <br/>
-                <span class="ignored-method-name">vverifyDisplayNeuroscienceQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayMusculoskeletalVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayNephrologyVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayEndocrinologyVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayReproductiveMedicineVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayBehavioralQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayBiochemistryVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayInfectiousDiseaseVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">verifyDisplayBiochemistryQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayMusculoskeletalQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayGastroenterologyVideotitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayInfectiousDiseaseQuiztitle</span>
-                <br/>
-                <span class="ignored-method-name">VerifyDisplayImmunologyVideotitle</span>
+                <span class="ignored-method-name">dateCheck</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -326,20 +237,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">med.jasper.regression.DisplayVideotitle</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">med.OLP.regression.RegressionForOLPProducts</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">VerifyDisplayCardiologyVideotitle</span>
-                <span class="method-start">4615 ms</span>
+                <span class="method-name">VerifyTestAnalysisReviewpageforQbankOLP</span>
+                <span class="method-start">6892 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">283708 ms</span>
+                <span class="method-start">147880 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

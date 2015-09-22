@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="med.jasper.regression.DisplayVideotitle">
+      <class name="med.OLP.regression.RegressionForOLPProducts">
         <methods>
-          <include name="VerifyDisplayCardiologyVideotitle"/>
           <include name="beforeMethod"/>
+          <include name="VerifyTestAnalysisReviewpageforQbankOLP"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- med.jasper.regression.DisplayVideotitle -->
+      </class> <!-- med.OLP.regression.RegressionForOLPProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

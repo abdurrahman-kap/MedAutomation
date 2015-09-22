@@ -9,7 +9,7 @@ public class Runner {
 		 	a= args[0];
 		 	b= args[1];
 		 }*/
-		excleprac exRunner = new excleprac();
+		TimeVerifyWithEexcle exRunner = new TimeVerifyWithEexcle();
 		exRunner.beforeMethod();
 		exRunner.test1(args[0],args[1],args[2]);
 		exRunner.afterMethod();

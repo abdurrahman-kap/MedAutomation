@@ -8,7 +8,6 @@ public class Step3ObGynandEndoVideoTitlle extends BaseScript {
 	
 	@Test
 	public void VerifyInternalMedicine(){
-		openOPLLogInPage().logInOLPPage("abrahman", "abrahman", "USMLEStep3OnlinePrep2010");
-		
+		openOPLLogInPage().logInOLPPage("abrahman", "abrahman", "USMLEStep3OnlinePrep2010");	
 	}
 }

@@ -32,23 +32,48 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/AbRahman/Desktop/javacode/JasperWP.Tests-master/S1HY/repo/com/resources/displayNameReferenceId/0.1/displayNameReferenceId-0.1.jar">
+	<classpathentry kind="lib" path="C:/DevTools/Jars/mail-6.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/DevTools/Jars/activation.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-server/7.3.0.v20110203/jetty-server-7.3.0.v20110203.jar"/>
+	<classpathentry kind="lib" path="C:/DevTools/Jars/authentication-4.1.4 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/AbRahman/.m2/repository/org/apache/poi/poi-scratchpad/3.10.1/poi-scratchpad-3.10.1.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="com.resources"/>
-			<attribute name="maven.artifactId" value="displayNameReferenceId"/>
-			<attribute name="maven.version" value="0.1"/>
-			<attribute name="maven.scope" value="system"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/AbRahman/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.apache.xmlbeans"/>
-			<attribute name="maven.artifactId" value="xmlbeans"/>
-			<attribute name="maven.version" value="2.6.0"/>
+			<attribute name="maven.groupId" value="org.apache.poi"/>
+			<attribute name="maven.artifactId" value="poi-scratchpad"/>
+			<attribute name="maven.version" value="3.10.1"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="/ReportPDF"/>
+	<classpathentry kind="lib" path="C:/Users/AbRahman/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="dom4j"/>
+			<attribute name="maven.artifactId" value="dom4j"/>
+			<attribute name="maven.version" value="1.6.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/AbRahman/.m2/repository/org/codehaus/groovy/groovy-xml/2.3.7/groovy-xml-2.3.7.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.codehaus.groovy"/>
+			<attribute name="maven.artifactId" value="groovy-xml"/>
+			<attribute name="maven.version" value="2.3.7"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/AbRahman/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.13/htmlunit-2.13.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="net.sourceforge.htmlunit"/>
+			<attribute name="maven.artifactId" value="htmlunit"/>
+			<attribute name="maven.version" value="2.13"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/ReportPDF/itext-2.1.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

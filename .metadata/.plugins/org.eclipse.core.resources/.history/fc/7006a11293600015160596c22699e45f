@@ -1,0 +1,22 @@
+package med.qbank;
+
+import med.OLP.model.OLPHomePageModel;
+import med.OLP.model.OLPHomepageConfirmationPage;
+
+import org.openqa.selenium.WebDriver;
+
+public class QBankHomePageController {
+	
+	protected WebDriver driver = null;
+	public OLPHomePageModel olphomepage = null;
+	public OLPHomepageConfirmationPage confmPage = null;
+	
+	
+	public QBankHomePageController(WebDriver driver){
+		this.driver = driver;
+		olphomepage = new OLPHomePageModel(driver);
+		confmPage = new OLPHomepageConfirmationPage(driver);
+	}
+	
+
+}
